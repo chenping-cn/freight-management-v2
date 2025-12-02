@@ -1,11 +1,11 @@
-import './App.css';
+import { BrowserRouter } from "react-router";
+import Router from "./router";
 
 const App = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 };
 
