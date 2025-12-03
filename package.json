@@ -13,13 +13,13 @@
     "axios": "^1.13.2",
     "dayjs": "^1.11.19",
     "numeral": "^2.0.6",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-router": "^7.9.6"
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-router": "^7.10.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.8",
-    "@rsbuild/core": "^1.6.11",
+    "@rsbuild/core": "^1.6.12",
     "@rsbuild/plugin-react": "^1.4.2",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
