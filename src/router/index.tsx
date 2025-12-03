@@ -1,6 +1,6 @@
+import { Navigate, useRoutes } from "react-router";
 import { Login } from "@/pages/auth";
 import { PageNotFound } from "@/pages/exceptions";
-import { Navigate, useRoutes } from "react-router";
 
 const routers = [
   {
