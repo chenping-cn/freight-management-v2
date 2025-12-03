@@ -17,6 +17,6 @@ const routers = [
   },
 ];
 
-export default function Router() {
+export default function AppRouter() {
   return useRoutes(routers);
 }
