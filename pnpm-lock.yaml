@@ -27,14 +27,14 @@ importers:
         specifier: ^19.2.1
         version: 19.2.1(react@19.2.1)
       react-router:
-        specifier: ^7.10.0
+        specifier: ^7.10.1
         version: 7.10.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.8
         version: 2.3.8
       '@rsbuild/core':
-        specifier: ^1.6.12
+        specifier: ^1.6.13
         version: 1.6.13
       '@rsbuild/plugin-react':
         specifier: ^1.4.2
