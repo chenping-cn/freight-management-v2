@@ -7,14 +7,12 @@ let message: MessageInstance;
 let modal: Omit<ModalStaticFunctions, "warn">;
 let notification: NotificationInstance;
 
-const AntdApp = () => {
-  const AntdApp = App.useApp();
-  message = AntdApp.message;
-  modal = AntdApp.modal;
-  notification = AntdApp.notification;
+export default () => {
+  const app = App.useApp();
+  message = app.message;
+  modal = app.modal;
+  notification = app.notification;
   return null;
 };
-
-export default AntdApp;
 
 export { message, modal, notification };
