@@ -1,16 +1,14 @@
-import { App as AntdApp } from "antd";
-import { BrowserRouter } from "react-router";
+import { App as AntdProvider } from "antd";
+import { RouterProvider } from "react-router";
 import { GlobalInteractionComponent } from "@/components/globalInteractionComponent";
-import AppRouter from "./router";
+import routers from "./router";
 
 const App = () => {
   return (
-    <AntdApp>
+    <AntdProvider>
       <GlobalInteractionComponent />
-      <BrowserRouter>
-        <AppRouter />
-      </BrowserRouter>
-    </AntdApp>
+      <RouterProvider router={routers} />
+    </AntdProvider>
   );
 };
 

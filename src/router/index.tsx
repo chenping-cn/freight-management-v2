@@ -1,8 +1,8 @@
-import { Navigate, useRoutes } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
 import { Login } from "@/pages/auth";
 import { PageNotFound } from "@/pages/exceptions";
 
-const routers = [
+export const routers = [
   {
     path: "/login",
     element: <Login />,
@@ -17,6 +17,4 @@ const routers = [
   },
 ];
 
-export default function AppRouter() {
-  return useRoutes(routers);
-}
+export default createBrowserRouter(routers);
