@@ -1,12 +1,12 @@
 import { App as AntdApp } from "antd";
 import { BrowserRouter } from "react-router";
-import { GlobalCompo } from "@/components/globalCompo";
+import { GlobalInteractionComponent } from "@/components/globalInteractionComponent";
 import AppRouter from "./router";
 
 const App = () => {
   return (
     <AntdApp>
-      <GlobalCompo />
+      <GlobalInteractionComponent />
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>

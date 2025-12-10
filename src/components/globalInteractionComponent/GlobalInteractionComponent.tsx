@@ -7,7 +7,7 @@ let message: MessageInstance;
 let modal: Omit<ModalStaticFunctions, "warn">;
 let notification: NotificationInstance;
 
-const GlobalCompo = () => {
+const GlobalInteractionComponent = () => {
   const app = App.useApp();
   message = app.message;
   modal = app.modal;
@@ -15,6 +15,6 @@ const GlobalCompo = () => {
   return null;
 };
 
-export default GlobalCompo;
+export default GlobalInteractionComponent;
 
 export { message, modal, notification };
