@@ -2,7 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router";
 import { Login } from "@/pages/auth";
 import { PageNotFound } from "@/pages/exceptions";
 
-export const routers = [
+const routers = [
   {
     path: "/login",
     element: <Login />,
