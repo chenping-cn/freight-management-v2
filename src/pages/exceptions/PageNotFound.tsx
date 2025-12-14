@@ -4,15 +4,13 @@ import { useNavigate } from "react-router";
 function PageNotFound() {
   const navigate = useNavigate();
 
-  const onBtnClick = () => navigate("/");
-
   return (
     <Result
       status="404"
       title="404"
       subTitle="对不起，您访问的页面不存在。"
       extra={
-        <Button type="primary" onClick={onBtnClick}>
+        <Button type="primary" onClick={() => navigate("/")}>
           回到首页
         </Button>
       }
