@@ -30,7 +30,7 @@ axiosInstance.interceptors.response.use((response) => {
     message.error(respData.msg);
     storage.remove("token");
     location.href = "/login";
-  } else if (respData.code != 0) {
+  } else if (respData.code !== 0) {
     message.error(respData.msg);
     return Promise.reject(respData);
   }
