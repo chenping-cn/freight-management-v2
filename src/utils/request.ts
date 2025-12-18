@@ -1,6 +1,9 @@
 import axios, { type AxiosError } from "axios";
 import storage from "./storage";
+import env from "@/settings";
 import { message } from "@/components/globalInteractionComponent/GlobalInteractionComponent";
+
+console.log("config", env);
 
 const axiosInstance = axios.create({
   timeout: 5000,
@@ -17,11 +20,18 @@ axiosInstance.interceptors.request.use(
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
+    switch (env.mock) {
+      case true:
+        config.baseURL = env.mockApi;
+        break;
+      default:
+        config.baseURL = env.baseApi;
+    }
     return { ...config };
   },
   (error: AxiosError) => {
     return Promise.reject(error);
-  },
+  }
 );
 
 axiosInstance.interceptors.response.use((response) => {
