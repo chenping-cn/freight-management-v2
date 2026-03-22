@@ -21,10 +21,12 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.8",
     "@rsbuild/core": "^1.7.3",
+    "@rsbuild/plugin-less": "^1.6.2",
     "@rsbuild/plugin-react": "^1.4.6",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@typescript/native-preview": "7.0.0-dev.20260322.1"
+    "@typescript/native-preview": "7.0.0-dev.20260322.1",
+    "less": "^4.6.4"
   }
 }

@@ -1,6 +1,7 @@
 import path from "node:path";
 import { defineConfig } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
+import { pluginLess } from "@rsbuild/plugin-less";
 
 // Docs: https://rsbuild.rs/config/
 export default defineConfig({
@@ -9,7 +10,7 @@ export default defineConfig({
       "/api": "http://api-driver.marsview.cc",
     },
   },
-  plugins: [pluginReact()],
+  plugins: [pluginReact(), pluginLess()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
